@@ -1,4 +1,4 @@
-import { LOCAL_STORAGE_THEME_KEY, Themes, ThemeContext } from "./theme-context"
+import { LOCAL_STORAGE_THEME_KEY, Themes, ThemeContext } from "../lib/theme-context"
 import { FC, useMemo, useState, PropsWithChildren } from "react";
 
 export type ReactFC<Props extends Record<PropertyKey, unknown> = {}> = FC<PropsWithChildren<Props>>;
