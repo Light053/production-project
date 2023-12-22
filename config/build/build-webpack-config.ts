@@ -1,5 +1,4 @@
 import { BuildOptions } from "./types/types"
-import path from "path";
 import buildPlugins from "./build-plugins";
 import webpack from "webpack";
 import buildLoaders from "./build-loaders";
@@ -13,7 +12,7 @@ export function buildWebpackConfig(options: BuildOptions): webpack.Configuration
 		entry: paths.entry,
 
 		module: {
-			rules: buildLoaders(),
+			rules: buildLoaders(options),
 		},
 		resolve: buildResolvers(),
 		output: {
