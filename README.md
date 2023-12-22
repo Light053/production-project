@@ -1,1 +1,1 @@
-npm run wb for start webpack
+write 'npm start' for start dev server
