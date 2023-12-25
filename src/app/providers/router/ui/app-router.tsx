@@ -1,6 +1,4 @@
 import { Route, Routes } from 'react-router-dom';
-import { MainPage } from "pages/main-page";
-import { AboutPage } from "pages/about-page";
 import { FC, Suspense } from "react";
 import { routerConfig } from 'shared/config/route-config/route-config';
 
@@ -11,7 +9,11 @@ export const AppRouter: FC = () => {
 				{Object.values(routerConfig).map(({ element, path }) =>
 					<Route
 						key={path}
-						element={element}
+						element={
+							<div className='page-wrapper'>
+								{element}
+							</div>
+						}
 						path={path}
 					/>
 				)}
