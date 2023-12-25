@@ -23,9 +23,9 @@ export const ThemeSwitcher = ({ className }: ThemeSwitcherProps) => {
 				onClick={toggleTheme}>
 				{theme === Themes.DARK
 					?
-					<DayTheme height={'35px'} width={'40px'} />
+					<DayTheme height={'50px'} width={'70px'} />
 					:
-					<NightTheme height={'35px'} width={'40px'} />}
+					<NightTheme height={'50px'} width={'70px'} />}
 			</Button>
 		</div>
 	)
