@@ -4,11 +4,13 @@ import { ProgressPlugin } from "webpack";
 import webpack from 'webpack'
 import { BuildOptions } from "./types/types";
 import MiniCssExtractPlugin from 'mini-css-extract-plugin'
+import ReactRefreshWebpackPlugin from "@pmmmwh/react-refresh-webpack-plugin"; // Добавьте эту строку
 
 export default function buildPlugins({ paths, isDev }: BuildOptions): webpack.WebpackPluginInstance[] {
 	return [
 		new HtmlWebpackPlugin({
 			template: paths.html,
+			title: isDev ? 'Hot Module Replacement' : '',
 		}),
 		new ProgressPlugin(),
 		new MiniCssExtractPlugin({
@@ -17,6 +19,7 @@ export default function buildPlugins({ paths, isDev }: BuildOptions): webpack.We
 		}),
 		new webpack.DefinePlugin({
 			__IS__DEV: JSON.stringify(isDev)
-		})
-	]
+		}),
+		...(isDev ? [new ReactRefreshWebpackPlugin()] : []),
+	];
 }

@@ -1,4 +1,4 @@
-import { FC, Suspense } from "react";
+import { FC } from "react";
 import { useTheme } from "./providers/theme-providers";
 import { classNames } from "shared/class-names/class-names";
 import { AppRouter } from "./providers/router";
@@ -11,7 +11,6 @@ const App: FC = () => {
 	const { theme } = useTheme()
 
 	return (
-
 		<div className={classNames('app', {}, [theme])}>
 			<Navbar />
 			<div className="content-page">
