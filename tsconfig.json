@@ -27,7 +27,8 @@
 		"src/index.tsx",
 		"**/*.tsx",
 		"**/**/*.ts",
-		"**/**/*.tsx"
+		"**/**/*.tsx",
+		".eslintrc.js"
 	],
 	"exclude": [
 		"node_modules"

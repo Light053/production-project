@@ -1,4 +1,4 @@
-import { FC } from "react";
+import { FC } from 'react';
 import { useTheme } from "./providers/theme-providers";
 import { classNames } from "shared/class-names/class-names";
 import { AppRouter } from "./providers/router";

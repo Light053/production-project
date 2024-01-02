@@ -1,0 +1,9 @@
+.clear {
+  border: none;
+  background: none;
+  outline: none;
+}
+
+.button {
+  cursor: pointer;
+}/*# sourceMappingURL=button.module.css.map */

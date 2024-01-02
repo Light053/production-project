@@ -1,0 +1,6 @@
+.app.dark {
+  --bg-color: rgb(28, 28, 28);
+  --inverted-bg-color: rgb(148, 148, 148);
+  --primary-color: rgb(238, 255, 0);
+  --secondary-color: white;
+}/*# sourceMappingURL=dark.css.map */
