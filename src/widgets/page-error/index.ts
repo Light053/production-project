@@ -1,0 +1,1 @@
+import { PageError } from './ui/page-error'

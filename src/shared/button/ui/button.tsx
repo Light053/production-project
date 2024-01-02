@@ -9,7 +9,7 @@ export enum ButtonTheme {
 
 interface ButtonProps extends PropsWithChildren, ButtonHTMLAttributes<HTMLButtonElement> {
 	className?: string;
-	theme: ButtonTheme
+	theme?: ButtonTheme
 }
 
 

@@ -1,4 +1,4 @@
-import path from "path";
+
 import HtmlWebpackPlugin from 'html-webpack-plugin'
 import { ProgressPlugin } from "webpack";
 import webpack from 'webpack'
@@ -15,7 +15,7 @@ export default function buildPlugins({ paths, isDev }: BuildOptions): webpack.We
 		new ProgressPlugin(),
 		new MiniCssExtractPlugin({
 			filename: 'css/[name].[contenthash:8].css',
-			chunkFilename: 'css/[name].[contenthash:8].css'
+			chunkFilename: 'css/[name].[contenthash:8].css',
 		}),
 		new webpack.DefinePlugin({
 			__IS__DEV: JSON.stringify(isDev)

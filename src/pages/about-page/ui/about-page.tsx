@@ -1,11 +1,15 @@
-import { FC } from "react";
+import { BugButton } from "app/providers/error-boundary";
+import { FC, useEffect } from "react";
 import { useTranslation } from "react-i18next";
-
 
 const AboutPage: FC = () => {
 	const { t } = useTranslation('about');
+
 	return (
-		<div>{t('О нас')}</div>
+		<div>
+			{t('О нас')}
+		</div>
+
 	)
 }
 

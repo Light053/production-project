@@ -1,10 +1,11 @@
 import { Route, Routes } from 'react-router-dom';
 import { FC, Suspense } from "react";
 import { routerConfig } from 'shared/config/route-config/route-config';
+import { PageLoader } from 'widgets/page-loader';
 
 export const AppRouter: FC = () => {
 	return (
-		<Suspense fallback={<div>LOADING....</div>}>
+		<Suspense fallback={<PageLoader />}>
 			<Routes>
 				{Object.values(routerConfig).map(({ element, path }) =>
 					<Route
