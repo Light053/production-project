@@ -26,4 +26,6 @@ describe('class names tests', () => {
 		expect(classNames('test', { additional: true, red: undefined }, ['class1', 'class2'])).toBe(expected)
 	})
 
+
+
 })

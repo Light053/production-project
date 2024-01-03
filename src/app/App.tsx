@@ -1,6 +1,6 @@
 import { FC, useEffect } from 'react';
 import { useTheme } from "./providers/theme-providers";
-import { classNames } from "shared/class-names/class-names";
+import { classNames } from "shared/lib/class-names/class-names";
 import { AppRouter } from "./providers/router";
 import 'app/styles/index.scss'
 import { Navbar } from "widgets/navbar";

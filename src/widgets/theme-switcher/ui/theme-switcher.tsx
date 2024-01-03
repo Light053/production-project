@@ -1,5 +1,5 @@
 import { useTheme } from "app/providers/theme-providers"
-import { classNames } from "shared/class-names/class-names";
+import { classNames } from "shared/lib/class-names/class-names";
 import styles from './theme-switcher.module.scss';
 import { ButtonTheme } from "shared/button";
 import DayTheme from 'shared/assets/icons/day.svg';

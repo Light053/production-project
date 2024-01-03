@@ -1,5 +1,5 @@
 import { Button, ButtonTheme } from "shared/button"
-import { classNames } from "shared/class-names/class-names"
+import { classNames } from "shared/lib/class-names/class-names"
 import styles from './bug-button.module.scss'
 import { useEffect, useState } from "react"
 
