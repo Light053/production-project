@@ -1,17 +1,15 @@
-import { FC, useEffect } from 'react';
+import { FC } from 'react';
 import { useTheme } from "./providers/theme-providers";
 import { classNames } from "shared/lib/class-names/class-names";
 import { AppRouter } from "./providers/router";
-import 'app/styles/index.scss'
 import { Navbar } from "widgets/navbar";
 import { Sidebar } from "widgets/sidebar";
+import 'app/styles/index.scss'
+
 
 const App: FC = () => {
 
 	const { theme } = useTheme()
-
-
-
 	return (
 		<div className={classNames('app', {}, [theme])}>
 			<Navbar />

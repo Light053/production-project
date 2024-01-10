@@ -20,7 +20,10 @@ export const PageError = ({ className }: PageErrorProps) => {
 			<h1 className={classNames(styles.error_message, {}, [className])}>
 				{t('Упс! что-то пошло не так!')}
 			</h1>
-			<Button onClick={reloadPage} theme={ButtonTheme.CLEAR}>
+			<Button
+				onClick={reloadPage}
+				theme={ButtonTheme.OUTLINE}
+				className={'error-button'}>
 				{t('Обновить страницу')}
 			</Button>
 		</div>

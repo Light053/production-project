@@ -1,4 +1,17 @@
 .appLink {
 	color: var(--primary-color);
+}
 
+.primary {
+	color: var(--primary-color);
+	font-size: 24px;
+}
+
+.secondary {
+	color: var(--inverted-primary-color);
+	font-size: 18px;
+}
+
+.red {
+	color: red;
 }
