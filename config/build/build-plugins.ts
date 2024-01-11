@@ -8,7 +8,8 @@ import { BuildOptions } from "./types/types";
 
 
 export default function buildPlugins({ paths, isDev }: BuildOptions): webpack.WebpackPluginInstance[] {
-	return [
+
+	const plugins = [
 		new HtmlWebpackPlugin({
 			template: paths.html,
 			title: isDev ? 'Hot Module Replacement' : '',
@@ -22,6 +23,11 @@ export default function buildPlugins({ paths, isDev }: BuildOptions): webpack.We
 			__IS__DEV: JSON.stringify(isDev)
 		}),
 		...(isDev ? [new ReactRefreshWebpackPlugin()] : []),
-		new BundleAnalyzerPlugin()
+
 	];
+	if (isDev) {
+		plugins.push(new BundleAnalyzerPlugin())
+	}
+
+	return plugins
 }
