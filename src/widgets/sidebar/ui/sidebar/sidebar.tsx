@@ -9,34 +9,29 @@ interface SidebarProps extends PropsWithChildren {
 }
 
 export const Sidebar: FC<SidebarProps> = (props) => {
-	const [collapsed, setCollapsed] = useState(false)
+	const [collapsed, setCollapsed] = useState(false);
 
-	const { className, ...otherProps } = props
+	const { className } = props
 
 	const onToggle = () => {
-		setCollapsed(prev => !prev)
-	}
+		setCollapsed((prev) => !prev);
+	};
 
 	return (
 		<div
-			data-testid='sidebar'
-			className={classNames(
-				styles.sidebar,
-				{ [styles.collapsed]: collapsed },
-				[className])}>
-
-
+			data-testid="sidebar"
+			className={classNames(styles.Sidebar, { [styles.collapsed]: collapsed }, [className])}
+		>
 			<button
-				data-testid='sidebar-toggle'
+				data-testid="sidebar-toggle"
 				onClick={onToggle}
-			>toggle
+			>
+				toggle
 			</button>
-
-
-			<div className={classNames(styles.switchers, {}, [])}>
-				<ThemeSwitcher className="" />
+			<div className={styles.switchers}>
+				<ThemeSwitcher />
 				<LangSwitcher className={styles.lang} />
 			</div>
 		</div>
-	)
+	);
 }
