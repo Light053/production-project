@@ -28,8 +28,5 @@ jobs:
       - name: Build production project
         run: npm run build:prod
 
-      - name: Build development project
-        run: npm run build:dev
-
       - name: Unit tests
         run: npm run test:unit
