@@ -4,13 +4,11 @@
 	background-color: var(--inverted-bg-color);
 	display: flex;
 	align-items: center;
-	padding: 20px;
+	padding: 0 20px;
+	justify-content: flex-end;
 }
 
-.links {
-	margin-left: auto;
-}
-
-.mainLink {
-	margin-right: 15px;
+.loginBtn {
+	font-size: 22px;
+	font-weight: 700;
 }

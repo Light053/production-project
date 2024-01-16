@@ -3,8 +3,8 @@ import styles from './sidebar.module.scss'
 import { FC, PropsWithChildren, useState } from "react"
 import { ThemeSwitcher } from "widgets/theme-switcher";
 import { LangSwitcher } from "widgets/lang-switcher";
-import { Button } from "shared/button";
-import { AppLink } from "shared/ui";
+import { Button } from "shared/ui/button/index";
+import { AppLink } from "shared/ui/app-link";
 import { useTranslation } from "react-i18next";
 import { RouterPath } from "shared/config/route-config/route-config";
 import AboutIcon from 'shared/assets/icons/about.svg'

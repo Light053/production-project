@@ -1,11 +1,11 @@
 import { useTheme } from "app/providers/theme-providers"
 import { classNames } from "shared/lib/class-names/class-names";
 import styles from './theme-switcher.module.scss';
-import { ButtonTheme } from "shared/button";
+import { ButtonTheme } from "shared/ui/button";
 import DayTheme from 'shared/assets/icons/day.svg';
 import NightTheme from 'shared/assets/icons/night.svg';
 import { Themes } from "app/providers/theme-providers/lib/theme-context";
-import { Button } from "shared/button";
+import { Button } from "shared/ui/button";
 
 interface ThemeSwitcherProps {
 	className?: string
