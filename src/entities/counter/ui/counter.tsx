@@ -2,7 +2,6 @@ import { FC } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { Button, ButtonTheme } from "shared/ui/button";
 import { CounterActions } from "../model/slice/counterSlice";
-import { StateSchema } from "app/providers/store-provider/config/state-schema";
 import { getCounterValue } from "../model/selectors/get-counter-value/get-counter-value";
 
 interface CounterProps {

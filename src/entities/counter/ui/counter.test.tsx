@@ -8,7 +8,7 @@ describe('Counter', () => {
 			initialState: { counter: { value: 10 } },
 		});
 		expect(screen.getByTestId('counter-value')).toHaveTextContent('10');
-		screen.debug();
+		screen.debug()
 	});
 
 	test('increment', () => {

@@ -1,6 +1,4 @@
 import { CounterActions, CounterReducer } from "./counterSlice"
-import { DeepPartial } from "react-hook-form/dist/types"
-import { StateSchema } from "app/providers/store-provider"
 import { CounterSchema } from "../types/counter-schema"
 
 describe('counter-slice', () => {
