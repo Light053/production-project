@@ -29,7 +29,8 @@
 		"**/**/*.ts",
 		"**/**/*.tsx",
 		".eslintrc.js",
-		"./config/jest/setup-tests.ts"
+		"./config/jest/setup-tests.ts",
+		"json-server/index.ts"
 	],
 	"exclude": [
 		"node_modules"

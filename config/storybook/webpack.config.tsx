@@ -1,7 +1,7 @@
 import path from "path"
 import { BuildPaths } from "../build/types/types"
 import webpack, { RuleSetRule } from "webpack"
-import { cssLoaders } from "../build/css-loaders/css-loaders"
+import { buildCssLoader } from "../build/css-loaders/css-loaders"
 
 export default ({ config }: { config: webpack.Configuration }) => {
 	const paths: BuildPaths = {
@@ -25,7 +25,7 @@ export default ({ config }: { config: webpack.Configuration }) => {
 	})
 	config.resolve.modules.push(paths.src)
 	config.resolve.extensions.push('ts', 'tsx')
-	config.module.rules.push(cssLoaders(true))
+	config.module.rules.push(buildCssLoader(true))
 
 	return config
 }

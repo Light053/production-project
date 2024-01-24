@@ -1,7 +1,7 @@
 import { BuildOptions } from "./types/types"
 import buildPlugins from "./build-plugins";
 import webpack from "webpack";
-import buildLoaders from "./build-loaders";
+import { buildLoaders } from "./build-loaders";
 import buildResolvers from "./build-resolvers";
 import BuildDevServer from "./build-dev-server";
 
