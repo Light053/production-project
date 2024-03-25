@@ -1,0 +1,16 @@
+.inputWrapper {
+	display: flex;
+	width: 100%;
+}
+
+.input {
+	max-width: 600px;
+	padding: 10px;
+	margin-bottom: 15px;
+	border: 1px solid var(--bg-color);
+	border-radius: 4px;
+
+	&:focus {
+		outline-color: var(--primary-color);
+	}
+}

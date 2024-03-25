@@ -5,8 +5,6 @@ import { AppRouter } from "./providers/router";
 import { Navbar } from "widgets/navbar";
 import { Sidebar } from "widgets/sidebar";
 import 'app/styles/index.scss'
-import { Modal } from 'shared/ui/modal';
-
 
 const App: FC = () => {
 	const { theme } = useTheme()
