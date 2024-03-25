@@ -1,16 +1,18 @@
 pre-push:
   commands:
+   parallel: true
     install-dependencies:
       run: npm install
     build:
       run: npm run build:prod
     unit-tests:
       run: npm run test:unit
+    storybook: 
+      run: storybook build -c config/storybook
 
 pre-commit:
   parallel: true
   commands:
     unit-tests:
       run: npm run test:unit
-    storybook: 
-      run: storybook build -c config/storybook
+    
